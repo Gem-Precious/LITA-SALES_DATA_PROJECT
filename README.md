@@ -47,3 +47,43 @@ EDA involved exploring the sales data to answer key questions, such as;
 - Find the monthly total sales for the current year
 - Find top 5 customers by total purchase amount
 - Get percentage of total sales contributed by each region
+
+  
+
+
+### Data Analysis
+
+Some interesting code worked with;
+~~~SQL
+SELECT Product, sum(Sales) AS ProductSales
+FROM  [dbo].[Sales_Data]
+GROUP BY Product
+ORDER BY 2 DESC
+
+SELECT Region, Count(Sales) AS TransactionCount
+FROM [dbo].[Sales_Data]
+GROUP BY Region
+
+SELECT TOP 1 Product, SUM(Sales) AS PopularProduct
+FROM [dbo].[Sales_Data]
+GROUP BY Product
+
+SELECT OrderDate, sum(Sales) As Totalsales
+from [dbo].[Sales_Data]
+WHERE 
+Year(OrderDate) = '2024'
+GROUP BY OrderDate 
+order by 2 DESC
+
+SELECT Product FROM [dbo].[Sales_Data]
+GROUP BY Product
+HAVING MAX(OrderDate) < DATEADD(Quarter,-1,GETDATE())
+
+### Results/Findings
+
+
+
+
+
+
+
