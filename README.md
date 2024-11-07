@@ -5,8 +5,7 @@
 
 This data analysis project aims to provide insights into the sales performance of a retail store. By analyzing various aspects of the sales data, We seek to identify trends, make data driven recommendations and gain deeper understanding of the Retail Store's performance.
 
-![SALES DATA DASHBOARD REPORT](https://github.com/user-attachments/assets/82db9832-f36e-4bf4-828f-47b52d75bc33)
-
+![SALES DATA DASHBOARD REPORT](https://github.com/user-attachments/assets/a2f61d5b-2c1d-4a0a-8d7e-09bfd1712de2)
 
 ### Data Sources
 
